@@ -1,0 +1,19 @@
+grant {
+permission java.net.SocketPermission "*:*", "accept, resolve";
+permission java.net.SocketPermission "*:10992", "listen";
+permission java.net.SocketPermission "localhost:60000", "accept,connect";
+permission java.util.PropertyPermission "user.home", "read";
+permission java.io.FilePermission "${user.home}/ssvn/-", "read, write, delete";
+permission java.io.FilePermission "/home/ALUNOSFC/fc32550/ssvn/-", "read, write, delete";
+permission java.io.FilePermission "ssvnserver.jks", "read";
+permission java.io.FilePermission "truststore.jks", "read";
+permission java.lang.RuntimePermission "shutdownHooks";
+permission java.lang.RuntimePermission "writeFileDescriptor";
+permission java.lang.RuntimePermission "readFileDescriptor";
+permission java.util.PropertyPermission "javax.net.ssl.keyStorePassword", "read, write";
+permission java.util.PropertyPermission "javax.net.ssl.trustStorePassword", "read, write";
+permission java.util.PropertyPermission "javax.net.ssl.keyStore", "read";
+permission java.util.PropertyPermission "javax.net.ssl.trustStore", "read";
+permission java.util.PropertyPermission "java.naming.provider.url", "read";
+permission java.lang.RuntimePermission "accessClassInPackage.sun.misc";
+};

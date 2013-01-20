@@ -1,0 +1,1 @@
+java -Djava.security.manager -Djava.security.policy=server.pol -Djavax.net.ssl.trustStore=truststore.jks -Djava.naming.provider.url=ldaps://localhost:60000 -Djavax.net.ssl.keyStore=ssvnserver.jks -cp target/ssvnserver-1.0-SNAPSHOT.jar seg004.ssvnserver.SSVNServer 10000

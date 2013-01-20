@@ -1,0 +1,1 @@
+mvn exec:java -Djavax.net.ssl.trustStore=truststore.jks -Djavax.net.ssl.trustStorePassword=secret -Dexec.mainClass="seg004.ssvnclient.SSVNClient" -Dexec.args="$1 $2"
